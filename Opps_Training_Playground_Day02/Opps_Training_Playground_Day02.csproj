@@ -43,11 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccessModifierExample\ProtectedAccessModifier.cs" />
+    <Compile Include="AccessModifierExample\PublicAccessModifier.cs" />
+    <Compile Include="ClassMembersExample\Developer.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="PropertiesExample\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StructureExample\StructureExample.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GenericExample\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
