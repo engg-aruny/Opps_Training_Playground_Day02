@@ -1,6 +1,7 @@
 ﻿using System;
 using Opps_Training_Playground_Day02.AccessModifierExample;
 using Opps_Training_Playground_Day02.ClassMembersExample;
+using Opps_Training_Playground_Day02.GenericExample;
 using Opps_Training_Playground_Day02.PropertiesExample;
 using Opps_Training_Playground_Day02.StructureExample;
 
@@ -10,11 +11,24 @@ namespace Opps_Training_Playground_Day02
 	{
 		static void Main(string[] args)
 		{
+			/*Class Member*/
 			//ClassMembersExampleOutput();
+
+
+			/*Access Modifier*/
 			//PublicAccessModifierExampleOutput();
 			//ProtectedAccessModifierOutput();
+
+			/*Properties*/
 			//PropertiesExampleOutput();
+
+			/*Struct*/
 			//StructureExampleOutput();
+
+			/*Generics*/
+			//GenericClassExampleOutput();
+			//GenericMethodExampleOutput();
+
 			Console.ReadKey();
 		}
 
@@ -89,6 +103,34 @@ namespace Opps_Training_Playground_Day02
 			Console.WriteLine("Book 2 book_id : {0}", Book2.book_id);
 
 			Console.ReadKey();
+		}
+
+		private static void GenericClassExampleOutput()
+		{
+			// instance of string type 
+			GFG<string> name = new GFG<string>();
+			name.value = "GeeksforGeeks";
+
+			// instance of float type 
+			GFG<float> version = new GFG<float>();
+			version.value = 5.0F;
+
+			// display GeeksforGeeks 
+			Console.WriteLine(name.value);
+
+			// display 5 
+			Console.WriteLine(version.value);
+		}
+
+		private static void GenericMethodExampleOutput()
+		{
+			// creating object of class GFG 
+			GenericMethod p = new GenericMethod();
+
+			// calling Generics method 
+			p.Display<int>("Integer", 122);
+			p.Display<char>("Character", 'H');
+			p.Display<double>("Decimal", 255.67);
 		}
 	}
 }

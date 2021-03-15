@@ -46,6 +46,8 @@
     <Compile Include="AccessModifierExample\ProtectedAccessModifier.cs" />
     <Compile Include="AccessModifierExample\PublicAccessModifier.cs" />
     <Compile Include="ClassMembersExample\Developer.cs" />
+    <Compile Include="GenericExample\GenericClass.cs" />
+    <Compile Include="GenericExample\GenericMethod.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="PropertiesExample\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -54,8 +56,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="GenericExample\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
