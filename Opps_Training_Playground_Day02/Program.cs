@@ -27,7 +27,7 @@ namespace Opps_Training_Playground_Day02
 
 			/*Generics*/
 			//GenericClassExampleOutput();
-			//GenericMethodExampleOutput();
+			GenericMethodExampleOutput();
 
 			Console.ReadKey();
 		}
@@ -69,7 +69,8 @@ namespace Opps_Training_Playground_Day02
 		private static void PropertiesExampleOutput()
 		{
 			Person myObj = new Person();
-			myObj.Name = "Liam";
+			myObj.FirstName = "Arun";
+			myObj.LastName = "Y";
 			Console.WriteLine(myObj.Name);
 		}
 

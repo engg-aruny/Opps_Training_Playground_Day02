@@ -8,3 +8,5 @@
 /.vs/slnx.sqlite
 /.vs/ProjectSettings.json
 /.vs/VSWorkspaceState.json
+/test/bin/Debug
+/test/obj/Debug
